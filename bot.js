@@ -42,7 +42,7 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-var prefix = ".";
+var prefix = "..";
     if (message.content.startsWith(".")) {
 message.channel.send('**تم الارسال علي الخاص**');
 const embed = new Discord.RichEmbed() 
