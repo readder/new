@@ -43,24 +43,21 @@ client.on('ready', () => {
 
 client.on("message", message => {
 var prefix = ".";
-    if (message.content.startsWith(".")) {
-message.channel.send('**تم الارسال علي الخاص**');
+    if (message.content.startsWith(".help")) {
+message.channel.send('تم الارسال علي الخاص');
 const embed = new Discord.RichEmbed() 
 .setColor("RANDOM")
-.setDescription(`
-وصف عن البوت
+.setDescription(وصف عن البوت
 :gem: البوت فيه كثير ميزات حلوة و جميلة
-                                      
+
 :rocket: البوت يعمل 24 ساعه
-                                      
+
 :up: خدمة سبورت 24/7
-                                      
+
 :free: البوت مجاني %100
-
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-__**General Commands**__
-**『.server / يعرض لك معلومات عن السيرفر』
+General Commands
+『.server / يعرض لك معلومات عن السيرفر』
 『.bot / يعرض لك كل معلومات البوت』
 『.bans / عدد الاشخاص المتبندين』
 『.user / معلومات عنك』
@@ -75,11 +72,9 @@ __**General Commands**__
 『.support / سيرفر الدعم』
 『.invites / عدد الانفايت حقك』
 『.help-music ~ برسلك اوامر الميوزك』
-『.contact / ارسال اقتراح او لمراسلة صاحب البوت』**
-
+『.contact / ارسال اقتراح او لمراسلة صاحب البوت』
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
- __**Administrative Commands**__
+ Administrative Commands
 **『.move @user / لسحب الشخص الى روومك』
 『.bc / رسالة جماعية الى كل اعضاء السيرفر』
 『.createcolors / يصنع الوان』
@@ -96,13 +91,12 @@ __**General Commands**__
 『.setcount / يسوي روم فيها عدد الاشخاص الي في السيرفر』
 『.ct <name> / انشاء شات』
 『.cv <name> / انشاء رووم فويس』
-『.setvoice ~ يسوي روم يكتب فيها عدد الأشخاص الموجودين في الروات الصوتية』
-
-`)
+『.setvoice ~ يسوي روم يكتب فيها عدد الأشخاص الموجودين في الروات الصوتية』)
 message.author.sendEmbed(embed)
-                                    
+
 }
-}); 
+});
+
       
 
 client.on("guildMemberAdd", member => {
