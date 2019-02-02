@@ -38,7 +38,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`.help | .inv`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`.help | readder is king`,'https://www.twitch.tv/v5bz');
 });
 
 client.on("message", message => {
