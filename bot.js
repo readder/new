@@ -42,7 +42,7 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-var prefix = ".";
+var prefix = ".help";
     if (message.content.startsWith(".")) {
 message.channel.send('**تم الارسال علي الخاص**');
 const embed = new Discord.RichEmbed() 
@@ -555,7 +555,7 @@ message.channel.sendEmbed(embed)
   
     client.on('message', message =>{
         let args = message.content.split(' ');
-        let prefix = '$'; 
+        let prefix = '.'; 
         
         if(args[0] === `${prefix}avatar`){
             let mentions = message.mentions.members.first()
